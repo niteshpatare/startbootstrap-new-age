@@ -1,3 +1,52 @@
+This is a bootstrap single page website based on node and express
+
+//update app.json and html text
+Steps to run this repo.
+Download the git repo into a folder on local machine.
+Perform following steps-
+1. Move index.html into views/index.ejs
+2. Move resources to public folder.
+3. Run below steps in node prompt
+	npm install -g heroku-cli
+
+	-cmds from heroku dashboard app under heroku cli
+	
+	Install the Heroku CLI.	Download and install the Heroku CLI.
+	$ heroku login
+
+	Clone the repository. Use Git to clone locarno's source code to your local machine.
+	$ heroku git:clone -a locarno  //locarno is the name of the heroku instance
+	$ cd locarno
+	$ rm -rf node_modules;
+	$ npm install --production
+	
+	Deploy your changes
+	$ git add .
+	$ git commit -am "make it better"
+	$ git push heroku master
+
+	$ heroku local web  -to run the app locally
+	Open http://localhost:5000/ and your app is running!	
+4. Copy all files to drop box and deploy these files via the dropbox mthod to heroku.
+5. Open heroku URL and your app is running! https://<application-name>.herokuapp.com/
+
+
+Help-
+https://scotch.io/tutorials/use-ejs-to-template-your-node-application
+https://github.com/Edxael/StarShip-Heroku
+https://devcenter.heroku.com/articles/deploying-nodejs
+
+Steps done which were missing on gitrepo:-
+1. Update the package.json with the required server dependency (Ejs and Express)
+2. Add app.json 
+3. Add the Procfile without extension.
+4. Add app.js file
+5. update .gitignore file
+
+
+Following has been inspired from below:-
+
+
 # [Start Bootstrap - New Age](https://startbootstrap.com/themes/new-age/)
 
 [New Age](https://startbootstrap.com/themes/new-age/) is a web app landing page theme for [Bootstrap](https://getbootstrap.com/) created by [Start Bootstrap](https://startbootstrap.com/).
